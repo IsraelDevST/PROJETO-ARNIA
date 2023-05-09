@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e5e5e5;
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  
+}
+
+.cima {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  /* #FFFFFF */
+
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+body {
+  background-color: rgb(206, 206, 206);
+}
+header {
+  height: 80px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  position: absolute;
+  /* #FFFFFF */
+  background: #ffffff;
+  /* Drop Shadow */
+  overflow: hidden;
+}
+
+.cima > img {
+  height: 44.33382034301758px;
+  width: 28.847665786743164px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.container {
+  position: relative;
+  left: 10px;
+  top: 177px;
+  border-radius: 16px;
+  display: flexbox;
+  margin: auto;
+  width: 1902px;
+  height: 600px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.cadastro-modal {
+  height: 52px;
+  width: 197px;
+  left: 20px;
+  bottom: 30px;
+  border-radius: 30px;
+  padding: 14px 20px 14px 20px;
+  position: relative;
+  top: 99%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 10px;
+  border: none;
+  color: white;
+  height: 52px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: #017849;
+  border-radius: 30px;
+}
+.filtro {
+  height: 48px;
+  width: 125px;
+  left: 379px;
+  top: 0px;
+  border-radius: [object Object]px;
+  padding: 14px 20px 14px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 10px;
+  border: none;
+  position: absolute;
+  right: -32.98%;
+  top: 0%;
+  bottom: 0%;
+  color: white;
+  /* Primária (Verde)/Verde Wexer */
+
+  background: #00995d;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.pesquisa {
+  border: none;
+  /* Rectangle 11 */
+  height: 48px;
+  width: 379px;
+  left: 0px;
+  top: 0px;
+  border-radius: [object Object]px;
+
+  box-sizing: border-box;
+
+  /* #FFFFFF */
+
+  background: #ffffff;
+  /* Gray 4 */
+
+  border: 0.1px solid #bdbdbd;
+  border-radius: 24px 0px 0px 24px;
+}
+h3 {
+  position: absolute;
+  left: 80.73%;
+  right: 2.07%;
+  top: 17.71%;
+  bottom: 21.88%;
+
+  /* montserrat 24 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* verde mais forte */
+
+  color: #0daf6e;
+}
+h4 {
+  color: #eb5757;
+}
+h2 {
+  position: relative;
+  top: 170px;
+  left: 300px;
+  /* comfortae 24 */
+
+  /* comfortae 24 */
+
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+}
+
+.juntos {
+  position: relative;
+
+  left: 60%;
+  top: 4%;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+input {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 16px;
+
+  width: 327px;
+  height: 47.92px;
+
+  /* Branco */
+
+  background: #ffffff;
+  /* Gray 4 */
+
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal-content {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(179, 179, 179, 0.5);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.input-lab {
+  width: 98%;
+  height: 80%;
+  margin: 20px;
+}
+#btn-salvar1 {
+  color: blue;
+  border-radius: 5px;
+  border: 1px solid #2f80ed;
+  width: 40px;
+  background-color: white;
+}
+
+#btn-visualizar {
+  color: #00995d;
+  border-radius: 5px;
+  border: 1px solid #017849;
+  background-color: white;
+  position: relative;
+  width: 40px;
+  
+}
+
+#btn-cancelar {
+  color: red;
+  border-radius: 5px;
+  border: 1px solid #eb5757;
+  background-color: white;
+  position: relative;
+  width: 40px;
+}
+
+
+.newpacient {
+  /* Novo paciente */
+
+  position: absolute;
+  left: 2.93%;
+  right: 80.51%;
+  top: 4.14%;
+  bottom: 90.86%;
+
+  /* montserrat 24 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  color: #00995d;
+}
+
+.retangulo {
+  position: relative;
+  display: flex;
+  width: 105.5%;
+  height: 2px;
+  right: 33px;
+  top: 30px;
+  background: #e0e0e0; /* Tons de cinza/Cinza 300 */
+  overflow: hidden;
+}
+
+.campos {
+  /* *Campos obrigatórios */
+
+  position: relative;
+  width: 161px;
+  height: 20px;
+  left: 32px;
+  top: 39px;
+
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* identical to box height, or 20px */
+
+  /* Cinzas/Cinza 700 */
+
+  color: #616161;
+}
+#setabaixo { 
+  color: black;
+}
+.daniel {
+  /* Bem vindo(a), Daniel */
+
+  left: 83.3%;
+  top: 0px;
+
+  /* montserrat 24 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  /* verde mais forte */
+
+  color: #08633e;
+
+  /* Adiciona a classe juntar para alinhar horizontalmente */
+  display: inline-block;
+}
+.cancelar {
+  position: relative;
+  left: 74.47%;
+  right: 18.57%;
+  top: 40.24%;
+  bottom: 40.21%;
+
+  /* comfortaa 16 bold */
+
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  /* Tons de cinza/Cinza 700 */
+
+  color: #616161;
+}
+
+#btnSalvar {
+  /* Text */
+
+  height: 48px;
+  width: 147px;
+  left: 914px;
+  top: 25px;
+  border-radius: 8px;
+
+  position: relative;
+  left: 85%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  color: white;
+  /* Primária (Verde)/Verde Wexer */
+  border: none;
+  background: #00995d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  color: #2f80ed;
+}
+
+.close {
+  height: 20px;
+  width: 20px;
+  left: 96%;
+  top: 2px;
+  border-radius: 0px;
+  color: black;
+}
+
+img {
+  height: 44.33382034301758px;
+  width: 28.847665786743164px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal {
+  display: none;
+}
+
+#modal2 {
+  display: none;
+}
+
+.modal-content2 {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(179, 179, 179, 0.5);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}

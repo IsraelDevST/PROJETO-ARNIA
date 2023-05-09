@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+background-image: linear-gradient(to bottom, rgba(204, 188, 188, 0.459), rgba(255, 255, 255, 0.252)), url(../x.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: contain;
+height: 93vh;
+background-color: #E5E5E5;
+font-family: "Montserrat";
+
+}
+
+img {
+  height: 40.262916564941406px;
+  width: 181.79042053222656px;
+  left: 169px;
+  top: 43px;
+  border-radius: 0px;
+  /* logo */
+
+  position: absolute;
+  left: 32.5%;
+  right: 32.54%;
+  top: 9.23%;
+  bottom: 82.13%;
+}
+#cadastro {
+  position: relative;
+  /* Rectangle 44 */
+  height: 466px;
+  width: 522px;
+  left: -2px;
+  top: 0px;
+  border-radius: 16px;
+
+  /* outras propriedades... */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -70px;
+
+  /* Branco */
+
+  background: #ffffff;
+  /* Drop Shadow */
+
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 31.39%;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px 0px 24px;
+}
+
+.form-cadastro label {
+  font-size: 14px; /* Alterando o tamanho da letra de login e senha*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  color: #4f4f4f;
+}
+
+input {
+  height: 47.92px;
+  width: 379.04px;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.welcome p:first-of-type {
+  height: 21.919979095458984px;
+  width: 177.8876953125px;
+  left: 171px;
+  top: 109px;
+  border-radius: nullpx;
+
+  /* Seja bem-vindo(a)! */
+
+  position: absolute;
+  left: 32.88%;
+  right: 32.91%;
+  top: 20.39%;
+  bottom: 71.91%;
+
+  /* montserrat 18 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  color: #00995d;
+}
+
+.welcome p:last-of-type {
+  height: 22px;
+  width: 340px;
+  left: 90px;
+  top: 133px;
+  border-radius: nullpx;
+
+  /* Preencha os campos para se cadastrar */
+
+  position: absolute;
+  left: 17.31%;
+  right: 17.31%;
+  top: 25.4%;
+  bottom: 65.88%;
+
+  /* montserrat 16 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  color: #00995d;
+}
+
+.btn1 {
+  height: 48px;
+  width: 192px;
+  left: 257px;
+  top: 377.679931640625px;
+  border-radius: 8px;
+  padding: 0px 12px 0px 24px;
+  border: none;
+  color: white;
+
+  /* Auto layout */
+
+  /* btn */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px 0px 24px;
+  gap: 13px;
+  position: fixed;
+  width: 192px;
+  height: 48px;
+  left: 290px;
+  top: 400.68px;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  background: #00995d;
+  /* tag */
+
+  box-shadow: 0px 4px 2px rgba(253, 253, 253, 0.15);
+  border-radius: 8px;
+}
+
+
+.cadastro1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 534px;
+  width: 522px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+  width: 181.7px;
+}
+
+.welcome1 p:first-of-type {
+  height: 21.919979095458984px;
+  width: 177.8876953125px;
+  border-radius: nullpx;
+
+  /* Seja bem-vindo(a)! */
+
+  position: absolute;
+  left: 32.88%;
+  right: 32.91%;
+  top: 15.39%;
+  bottom: 71.91%;
+
+  /* montserrat 18 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  color: #00995d;
+}
+
+.welcome1 p:last-of-type {
+  height: 22px;
+  width: 340px;
+  left: 90px;
+  top: 133px;
+  border-radius: nullpx;
+
+  /* Preencha os campos para se cadastrar */
+
+  position: absolute;
+  left: 33.71%;
+  right: 22.31%;
+  top: 20.4%;
+  bottom: 65.88%;
+
+  /* montserrat 16 */
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primária (Verde)/Verde Wexer */
+
+  color: #00995d;
+}
+
+.form2 {
+  display: flex;
+  overflow: hidden;
+}
+
+.form-cadastro1 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4f4f4f;
+  display: block;
+  margin-bottom: 70px;
+  margin-top: 8px;
+  margin-right: 40px;
+  width: 70%;
+}
+
+.input2 {
+  height: 48px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn2 {
+  height: 48px;
+  width: 192px;
+  border-radius: 8px;
+  background-color: #00995d;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 240px;
+  margin-top: -30px; /* ajusta a posição do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+}
+
+.btn2:hover {
+  background-color: #007a47;
+}
+
+.asterisco {
+  color: red;
+}
+
+.validacao1 { 
+  position: absolute;
+  left: 13.46%;
+  top: 50.84%;
+  /* montserrat 14 */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* Red */
+  color: #b1abab;
+} 
+label {
+  position:relative;
+}
+
+.material-symbols-outlined {
+  position: relative;
+left: 10px;
+}

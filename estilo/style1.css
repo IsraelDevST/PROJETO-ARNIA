@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  border: 0;
+  font-family: "Roboto";
+}
+body {
+  background-color: #f1f1f1;
+  background-image: linear-gradient(to bottom, rgba(204, 188, 188, 0.459), rgba(255, 255, 255, 0.252)), url(../x.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: contain;
+height: 93vh;
+}
+#container {
+  /* esse é o meu layout principal */
+  height: 608px;
+  width: 608px;
+  border-radius: 16px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #017849;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-count: auto;
+  overflow: auto;
+}
+.template {
+  height: 809.0211181640625px;
+  width: 526.423828125px;
+  left: -86.423828125px;
+  top: 54.501220703125px;
+  border-radius: 0px;
+  background-size: cover;
+
+
+/* logo */
+
+
+position: absolute;
+left: -5.72%;
+right: 70.86%;
+top: 4.92%;
+bottom: 21.99%;
+
+}
+
+#logo {
+
+position: absolute;
+width: 321.02px;
+height: 127.42px;
+left: 144.5px;
+top: 41.5px;
+
+}
+
+form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 31.39%;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Form-login label {
+  font-size: 14px; /* Alterando o tamanho da letra de login e senha*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input {
+  height: 47.92px;
+  width: 379.04px;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.entrar {
+  height: 47.92px;
+  width: 379.04px;
+  border-radius: 8px;
+  background-color: #017849;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  color: #017849;
+}
+
+a {
+  font-family: "Roboto";
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline; /* editando o botão de redirecionamento */
+  text-decoration: none;
+}
+
+label {
+  font-size: px;
+}

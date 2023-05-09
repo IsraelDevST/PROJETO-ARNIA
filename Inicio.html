@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo/inicio.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  </head>
+<body>
+    <header>
+
+      <div id="logo-container">
+        <div class="cima"><img src="logo (4).png" alt="" /></div>
+        <div class="header-text">
+          <h3>Bem vindo (a) <p class="daniel">Daniel</p><span id="setabaixo"
+              class="material-symbols-outlined">
+              arrow_drop_down
+            </span></h3>
+        </div>
+
+      </div>
+
+    </header>
+
+    <h2>Meus pacientes</h2>
+    <div class="container">
+      <div class="juntos">
+        <input class="pesquisa" type="text" placeholder="Pesquisar">
+        <button class="filtro"><span class="material-symbols-outlined">
+            search
+          </span>Filtrar</button>
+      </div>
+      <div>
+        <button onclick="openModal()" class="cadastro-modal">
+          <span class="material-symbols-outlined">
+            add_circle
+          </span>Novo cadastro
+        </button>
+      </div>
+      <table id="table-pacientes" class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal1()"><i
+            class="ri-close-circle-fill"></i></span>
+        <h2 class="newpacient">Novo paciente</h2>
+        <form id="form-paciente" action="http://localhost:3000/pacientes"
+          method="POST" class="input-lab">
+
+          <div class="row">
+            <div class="col">
+              <label for="CPF">CPF</label>
+              <input type="text" id="codigo" name="codigo" class="form-control"
+                placeholder="Digite">
+            </div>
+            <div class="col">
+              <label for="1nome">Nome</label>
+              <input type="text" id="1nome" name="nome" class="form-control"
+                placeholder="Digite">
+            </div>
+            <div class="col">
+              <label for="Data">Data de Nascimento</label>
+              <input type="date" id="Data" name="data" class="form-control"
+                placeholder="Digite">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="1email">E-mail</label>
+              <input type="email" id="1email" name="email" class="form-control"
+                placeholder="Digite">
+            </div>
+            <div class="col">
+              <label for="Sexo">Sexo/Gênero</label>
+              <select id="Sexo" name="sexo" class="form-control"
+                placeholder="Digite">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Não binário">Não binário</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="escolha">Nacionalidade</label>
+              <select id="escolha" name="nacionalidade" class="form-control">
+                <option value="Brasileiro">Brasileiro</option>
+                <option value="Estrangeiro">Estrangeiro</option>
+                <option value="Teste">Teste</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label for="naturalidade">Naturalidade</label>
+              <input type="text" id="naturalidade" name="naturalidade"
+                class="form-control" placeholder="Digite">
+            </div>
+            <div class="col">
+              <label for="profissao">Profissão</label>
+              <input type="text" id="profissao" name="profissao"
+                class="form-control" placeholder="Digite">
+            </div>
+            <div class="col">
+              <label for="escolaridade">Escolaridade</label>
+              <input type="text" id="escolaridade" name="escolaridade"
+                class="form-control" placeholder="Digite">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="estado-civil">Estado Civil</label>
+                <input type="text" id="estado-civil" name="estado-civil"
+                  class="form-control" list="lista-estado-civil"
+                  placeholder="Digite">
+                <i class="bi bi-caret-down-fill"></i>
+                <datalist id="lista-estado-civil">
+                  <option value="Solteiro(a)">
+                    <option value="Casado(a)">
+                      <option value="Viúvo(a)">
+                      </datalist>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col">
+                    <label for="mae">Mãe</label>
+                    <input type="text" id="Mae" name="mae" class="form-control"
+                      placeholder="Digite">
+                  </div>
+
+                  <div class="col">
+                    <label for="Pai">Pai</label>
+                    <input type="text" id="Pai" name="pai" class="form-control"
+                      placeholder="Digite">
+                  </div>
+
+                  <hr class="retangulo">
+                  <div class="row">
+
+                    <div id="abrir" class="col">
+                      <p class="campos">*Campos Obrigatorios</p>
+                      <a class="cancelar" href="Inicio.html">Cancelar</a>
+                      <button type="button" id="btnSalvar">Criar</button>
+                    </div>
+                  </div>
+                </div>
+
+</form>
+              <div id="modal2"> 
+                <div class="modal-content1111">
+                  <span class="close">&times;</span>
+                  <h2>Dados do Paciente</h2>
+                  <form id="form2" action="http://localhost:3000/pacientes"
+                    method="GET" class="input-lab">
+                    <div class="row">
+                      <div class="col">
+                        <label for="paciente-codigo">CPF</label>
+                        <input type="text" id="paciente-codigo"
+                          name="paciente-codigo" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                      <div class="col">
+                        <label for="paciente-nome">Nome</label>
+                        <input type="text" id="paciente-nome"
+                          name="paciente-nome" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                      <div class="col">
+                        <label for="paciente-data-nascimento">Data de Nascimento</label>
+                        <input type="date" id="paciente-data-nascimento"
+                          name="paciente-data-nascimento" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <label for="paciente-email">E-mail</label>
+                        <input type="email" id="paciente-email"
+                          name="paciente-email" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                      <div class="col">
+                        <label for="paciente-sexo">Sexo/Gênero</label>
+                        <select id="paciente-sexo" name="paciente-sexo"
+                          class="form-control" placeholder="Digite">
+                          <option value="Masculino">Masculino</option>
+                          <option value="Feminino">Feminino</option>
+                          <option value="Não binário">Não binário</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <label for="paciente-nacionalidade">Nacionalidade</label>
+                        <select id="paciente-nacionalidade"
+                          name="paciente-nacionalidade" class="form-control">
+                          <option value="Brasileiro">Brasileiro</option>
+                          <option value="Estrangeiro">Estrangeiro</option>
+                          <option value="Teste">Teste</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <label for="paciente-naturalidade">Naturalidade</label>
+                        <input type="text" id="paciente-naturalidade"
+                          name="paciente-naturalidade" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                      <div class="col">
+                        <label for="paciente-profissao">Profissão</label>
+                        <input type="text" id="paciente-profissao"
+                          name="paciente-profissao" class="form-control"
+                          placeholder="Digite">
+                      </div>
+                      <div class="col">
+                        <label for="paciente-escolaridade">Escolaridade</label>
+                        <input type="text" id="paciente-escolaridade"
+                          name="paciente-escolaridade" class="form-control"
+                          placeholder="Digite">
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="paciente-estado-civil">Estado Civil</label>
+                          <input type="text" id="paciente-estado-civil"
+                            name="paciente-estado-civil" class="form-control"
+                            list="paciente-estado-civil" placeholder="Digite">
+                          <i class="bi bi-caret-down-fill"></i>
+                          <datalist id="lista-estado-civil">
+                            <option value="Solteiro(a)">
+                              <option value="Casado(a)">
+                                <option value="Viúvo(a)">
+                                </datalist>
+                              </div>
+                            </div>
+
+
+
+                            <div class="col">
+                              <label for="Paciente-mae">Mãe</label>
+                              <input type="text" id="paciente-mae"
+                                name="paciente-mae" class="form-control">
+                            </div>
+
+                            <div class="col">
+                              <label for="Pai">Pai</label>
+                              <input type="text" id="paciente-pai"
+                                name="paciente-pai" class="form-control">
+                            </div>
+
+                            <hr class="retangulo">
+                            <div class="row">
+
+                              <div id="abrir" class="col">
+                                <p class="campos">*Campos Obrigatorios</p>
+                                <a class="cancelar" href="Inicio.html">Sair</a>
+                                <button type="button" id="btnVisualizar1">Visualizar</button>
+                              </div>
+                            </div>
+                          
+                      </form>
+                    </div>
+                  </div>
+
+                      <script src="server/server2.js"></script>
+                    </body>
+                  </html>
