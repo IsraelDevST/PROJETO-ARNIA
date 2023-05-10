@@ -56,7 +56,7 @@ document.querySelector("#btnSalvar").addEventListener("click", (event) => {
         <button 
           <i class="ri-todo-fill"></i>
         </button>
-        <button type="button" id=onclick="openModal2()" type="button" id="btn-visualizar">
+        <button  type="button" type="button" id="btn-visualizar">
           <i class="ri-edit-2-line"></i>
         </button>
         <button type="button" id="btn-cancelar">
@@ -99,9 +99,8 @@ function atualizarTabela() {
             <td>${paciente.nome}</td>
             <td>${paciente.cpf}</td>
             <td>
-            <button onclick="openModal2()" type="button" id="btn-visualizar">
-            <i class="ri-todo-fill"></i>
-              </button>
+           <button  type="button" type="button" id="btn-visualizar">
+          <i class="ri-edit-2-line"></i>
               <button type="button" id="btn-salvar1">
                 <i class="ri-edit-2-line"></i>
               </button>
@@ -120,3 +119,5 @@ function atualizarTabela() {
 
 // Chama a função de atualização da tabela no início da execução do código
 atualizarTabela();
+document.getElementById("btn-visualizar").addEventListener("click", function() {
+    window.location.href = "prontuario.html";
