@@ -33,23 +33,22 @@ btnSubmit2.addEventListener("click", function() {
 
   // enviar dados do usuário para a API
   fetch("https://psiwexer-nxqq.onrender.com/usuarios", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(usuario),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-    // Redirecionar para a página desejada após o envio bem-sucedido do formulário
-    window.location.href = "index.html"; // altere aqui para a página desejada
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(usuario),
   })
-  .catch((error) => {
-    console.error(error);
-  });
-
-
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      // Redirecionar para a página desejada após o envio bem-sucedido do formulário
+      window.location.href = "index.html";
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+});
 function openModal() {
   const modal = document.getElementById("modalsair");
   modal.style.display = "block";
