@@ -122,5 +122,4 @@ function atualizarTabela() {
 
 // Chama a função de atualização da tabela no início da execução do código
 atualizarTabela();
-document.getElementById("btn-visualizar").addEventListener("click", function() {
-    window.location.href = "prontuario.html";
+
