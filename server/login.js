@@ -9,7 +9,7 @@ function minhaFuncao() {
     };
   
     // Enviar os dados de login para a API
-    fetch("http://localhost:3000/usuarios", {
+    fetch("https://psiwexer-nxqq.onrender.com/usuarios", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
