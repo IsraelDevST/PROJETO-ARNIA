@@ -43,7 +43,7 @@ btnSubmit2.addEventListener("click", function() {
   .then((data) => {
     console.log(data);
     // Redirecionar para a página desejada após o envio bem-sucedido do formulário
-    window.location.href = "outra_pagina.html"; // altere aqui para a página desejada
+    window.location.href = "index.html"; // altere aqui para a página desejada
   })
   .catch((error) => {
     console.error(error);
