@@ -33,22 +33,21 @@ btnSubmit2.addEventListener("click", function() {
 
   // enviar dados do usuário para a API
   fetch("https://psiwexer-nxqq.onrender.com/usuarios", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(usuario),
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(usuario),
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    // Redirecionar para a página desejada após o envio bem-sucedido do formulário
+    window.location.href = "outra_pagina.html"; // altere aqui para a página desejada
   })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      // Redirecionar para a página desejada após o envio bem-sucedido do formulário
-      window.location.href = "index.html";
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
+  .catch((error) => {
+    console.error(error);
+  });
 function minhaFuncao() {
   // Obter os valores de email e senha do formulário de login
   const email = document.getElementById("email").value;
