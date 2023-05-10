@@ -20,7 +20,7 @@ function minhaFuncao() {
       .then((data) => {
         // Se os dados estiverem corretos, redirecionar o usuário para a página desejada
         if (data.autenticado) {
-          window.location.href = "Inicio.html";
+          window.location = "./inicio.html"
         } else {
           // Caso contrário, exibir uma mensagem de erro
           alert("Email ou senha incorretos.");
