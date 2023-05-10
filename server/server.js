@@ -43,7 +43,7 @@ btnSubmit2.addEventListener("click", function() {
     .then((data) => {
       console.log(data);
       // Redirecionar para a página desejada após o envio bem-sucedido do formulário
-      window.location.replace("index.html");
+      window.location = "./index.html"
     })
     .catch((error) => {
       console.error(error);
