@@ -56,9 +56,10 @@ document.querySelector("#btnSalvar").addEventListener("click", (event) => {
         <button 
           <i class="ri-todo-fill"></i>
         </button>
-        <button  type="button" type="button" id="btn-visualizar">
-          <i class="ri-edit-2-line"></i>
-        </button>
+        <a href="prontuario.html" id="btn-visualizar">
+  <i class="ri-edit-2-line"></i> Visualizar
+</a>
+
         <button type="button" id="btn-cancelar">
           <i class="ri-delete-bin-fill"></i>
         </button>
@@ -101,8 +102,10 @@ function atualizarTabela() {
             <td>
            <button  type="button" type="button" id="btn-visualizar">
           <i class="ri-edit-2-line"></i>
-              <button type="button" id="btn-salvar1">
-                <i class="ri-edit-2-line"></i>
+              <a href="prontuario.html" id="btn-visualizar">
+  <i class="ri-edit-2-line"></i> Visualizar
+</a>
+
               </button>
               <button type="button" id="btn-cancelar">
                 <i class="ri-delete-bin-fill"></i>
