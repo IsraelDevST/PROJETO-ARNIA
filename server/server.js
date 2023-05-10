@@ -65,7 +65,7 @@ function minhaFuncao() {
 
       // Se as credenciais estiverem corretas, redirecionar o usuário para a página desejada
       if (usuario) {
-        window.location.href = "inicio.html";
+        window.location.href = "Inicio.html";
       } else {
         // Caso contrário, exibir uma mensagem de erro
         alert("Email ou senha incorretos.");
