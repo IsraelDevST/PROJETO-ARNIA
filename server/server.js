@@ -32,7 +32,7 @@ btnSubmit2.addEventListener("click", function() {
   };
 
   // enviar dados do usuário para a API
-  fetch("http://localhost:3000/usuarios", {
+  fetch("https://psiwexer-nxqq.onrender.com/usuarios", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function minhaFuncao() {
   const senha = document.getElementById("senha").value;
 
   // Enviar uma requisição GET para obter a lista de usuários
-  fetch("http://localhost:3000/usuarios")
+  fetch("https://psiwexer-nxqq.onrender.com/usuarios")
     .then((response) => response.json())
     .then((usuarios) => {
       // Verificar se as credenciais correspondem a algum usuário
