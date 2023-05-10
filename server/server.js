@@ -48,32 +48,7 @@ btnSubmit2.addEventListener("click", function() {
   .catch((error) => {
     console.error(error);
   });
-function minhaFuncao() {
-  // Obter os valores de email e senha do formulário de login
-  const email = document.getElementById("email").value;
-  const senha = document.getElementById("senha").value;
 
-  // Enviar uma requisição GET para obter a lista de usuários
-  fetch("https://psiwexer-nxqq.onrender.com/usuarios")
-    .then((response) => response.json())
-    .then((usuarios) => {
-      // Verificar se as credenciais correspondem a algum usuário
-      const usuario = usuarios.find(
-        (u) => u.email === email && u.senha === senha
-      );
-
-      // Se as credenciais estiverem corretas, redirecionar o usuário para a página desejada
-      if (usuario) {
-        window.location.href = "index.html";
-      } else {
-        // Caso contrário, exibir uma mensagem de erro
-        alert("Email ou senha incorretos.");
-      }
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-}
 
 function openModal() {
   const modal = document.getElementById("modalsair");
