@@ -27,7 +27,7 @@ document.querySelector("#btnSalvar").addEventListener("click", (event) => {
   };
 
   // Faz uma requisição POST para a API com os dados do paciente
-  fetch("http://localhost:3000/pacientes", {
+  fetch("https://psiwexer-nxqq.onrender.com/pacientes", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -79,7 +79,7 @@ document.querySelector("#btnSalvar").addEventListener("click", (event) => {
 });
 
 function atualizarTabela() {
-  fetch("http://localhost:3000/pacientes")
+  fetch("https://psiwexer-nxqq.onrender.com/pacientes")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Erro ao buscar pacientes");
